@@ -24,6 +24,16 @@
     });
   }
 
+  /* "Nach oben" / Brand-Klick: zuverlaessig ganz nach oben scrollen
+     (ein Sprung zu #top wird wegen der sticky-Navigation sonst ignoriert) */
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll('a[href="#top"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  });
+
   /* Reveal-on-scroll */
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
