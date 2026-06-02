@@ -226,8 +226,8 @@ a  { color: var(--rose-deep); text-decoration: none; }
   transform: rotate(8deg);
   line-height: 1.1;
 }
-.hero__badge-num { display: block; font-size: 3.2rem; font-weight: 700; font-family: var(--font-script); }
-.hero__badge-text { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.hero__badge-num { display: block; font-size: 3.2rem; line-height: 1; font-weight: 700; font-family: var(--font-script); }
+.hero__badge-text { display: block; margin-top: -10px; font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
 
 /* decorative blobs & hearts */
 .blob {
