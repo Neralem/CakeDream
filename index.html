@@ -15,10 +15,9 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Schriften werden lokal geladen (siehe assets/css/styles.css) – kein Google-CDN -->
+  <link rel="preload" href="assets/fonts/quicksand-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/dancing-script-latin.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -217,6 +216,10 @@
       <p class="footer__sign">Ich freue mich auf dich! <svg viewBox="0 0 24 24" class="footer__heart"><use href="#icon-heart"/></svg></p>
       <p class="footer__brand">CakeDream &middot; Tortendekorier-Kurs &middot; Friedrichroda</p>
       <p class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <span aria-hidden="true">·</span>
+        <a href="datenschutz.html">Datenschutz</a>
+        <span aria-hidden="true">·</span>
         <a href="#top">Nach oben</a>
         <span aria-hidden="true">·</span>
         <span>&copy; <span id="year"></span> CakeDream</span>
